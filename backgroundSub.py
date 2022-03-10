@@ -17,7 +17,7 @@ while True:
     if frame is None:
         break
 
-    frame = cv.resize(frame, (800, 800))
+    frame = cv.resize(frame, (400, 400))
 
     fgMask = backSub.apply(frame)
 

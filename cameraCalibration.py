@@ -103,3 +103,4 @@ for i in range(len(objpoints)):
     mean_error += error
 
 print("total error: {}".format(mean_error/len(objpoints)))
+

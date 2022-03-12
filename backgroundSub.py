@@ -28,7 +28,7 @@ while True:
 
     cv.rectangle(frame, (10, 2), (100, 20), (255, 255, 255), -1)
     cv.putText(frame, str(capture.get(cv.CAP_PROP_POS_FRAMES)), (15, 15),
-               cv.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 0))
+               cv.FONT_HERSHEY_PLAIN, 0.5, (0, 0, 0))
 
     fgMask[np.abs(fgMask) < 250] = 0
 

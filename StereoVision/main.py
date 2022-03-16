@@ -5,7 +5,7 @@ import time
 import imutils
 from matplotlib import pyplot as plt
 
-# Functions
+# Functions from other files
 import HSV_filter as hsv
 import shape_recognition as shape
 import triangulation as tri
@@ -33,11 +33,11 @@ while(True):
     ret_right, frame_right = cap_right.read()
     ret_left, frame_left = cap_left.read()
 
-################## CALIBRATION #########################################################
+################## CALIBRATION ###################################
 
     #frame_right, frame_left = calib.undistorted(frame_right, frame_left)
 
-########################################################################################
+###################################################################
 
     # If cannot catch any frame, break
     if ret_right==False or ret_left==False:                    
@@ -59,7 +59,7 @@ while(True):
         # Hough Transforms can be used aswell or some neural network to do object detection
 
 
-        ################## CALCULATING BALL DEPTH #########################################################
+        ################## CALCULATING BALL DEPTH ##################################
 
         # If no ball can be caught in one camera show text "TRACKING LOST"
         if np.all(circles_right) == None or np.all(circles_left) == None:

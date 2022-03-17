@@ -8,4 +8,4 @@ Tasks to do:
 6. deep learning
 7. CUDNN
 8. mediapipe
-9. teachable-machine
+9. teachable-machine (https://teachablemachine.withgoogle.com/)

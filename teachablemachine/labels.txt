@@ -1,0 +1,3 @@
+0 Victory
+1 Thumbs up
+2 Wave
